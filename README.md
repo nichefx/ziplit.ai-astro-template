@@ -7,10 +7,7 @@ Inside of your Astro project, you'll see the following folders and files:
 ```text
 /
 ├── public/
-│   └── favicon.svg
 ├── src
-│   ├── assets
-│   │   └── astro.svg
 │   ├── components
 │   │   └── Welcome.astro
 │   ├── layouts
@@ -25,6 +22,8 @@ To learn more about the folder structure of an Astro project, refer to [our guid
 LLMs: https://docs.astro.build/llms.txt
 
 This project has React installed (checkout the shadcn Button.tsx) that can be used for complex components and Alpine.js installed (checkout the Welcome.astro file) that can be used for simple interactivity.
+
+It also has Lucide for icons (checkout Welcome.astro).
 
 ## 🧞 Commands
 

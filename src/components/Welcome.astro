@@ -1,19 +1,13 @@
 ---
-import background from '../assets/background.svg';
 import { Button } from '@/components/ui/button'
+import { Plus } from '@lucide/astro';
 ---
 
 <div class="font-inter h-full flex flex-col md:block">
-	<img 
-		class="fixed top-0 left-0 w-full h-full -z-10 blur-[100px]" 
-		src={background.src} 
-		alt="" 
-		fetchpriority="high" 
-	/>
 	<main class="h-full flex justify-center">
 		<section class="flex items-start flex-col justify-center p-4 md:block md:pt-[10%]">
 			<div x-data="{ count: 0 }">
-				<Button x-on:click="count++">Increment</Button>
+				<Button x-on:click="count++"><Plus /> Increment</Button>
 				<span x-text="count"></span>
 			</div>
 		</section>
