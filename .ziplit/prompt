@@ -9,4 +9,6 @@ Use stock photos from unsplash where appropriate, only valid URLs you know exist
 
 CRITICAL RULE: NEVER WRITE `package.json` directly use npm comands to install packages if needed 
 
-You can always add shadcn/ui components by running `npx shadcn@latest add component_name`
+You can always add shadcn/ui components by running `npx shadcn@latest add component_name -y`
+
+CRITICAL RULE: Whenever using `npm install package` or `npx shadcn@latest add component_name`, ALWAYS include `-y`
