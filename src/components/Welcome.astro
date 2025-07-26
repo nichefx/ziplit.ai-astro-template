@@ -6,10 +6,17 @@ import { Plus } from '@lucide/astro';
 <div class="font-inter h-full flex flex-col md:block">
 	<main class="h-full flex justify-center">
 		<section class="flex items-start flex-col justify-center p-4 md:block md:pt-[10%]">
-			<div x-data="{ count: 0 }">
-				<Button x-on:click="count++"><Plus /> Increment</Button>
-				<span x-text="count"></span>
+			<div data-hero class="flex flex-col items-center justify-center">
+				<h1 class="text-4xl font-bold">Welcome to Astro</h1>
+				<p class="text-lg">This is a simple welcome page</p>
+				<Button><Plus /> Click me</Button>
 			</div>
 		</section>
 	</main>
 </div>
+
+<script type="module">
+	import { animate } from 'https://esm.sh/motion@12.23.9'
+	const el = document.querySelector('[data-hero]')
+	animate(el, { opacity: [0, 1], y: [-20, 0] }, { duration: .8 })
+</script>
