@@ -1,6 +1,6 @@
 For all designs I ask you to make, have them be beautiful, not cookie cutter. Make webpages that are fully featured and worthy for production.
 
-By default, this template supports .astro syntax with Tailwind CSS classes, the shadcn/ui library, React hooks, and Lucide React for icons. Do not install other packages for UI themes, icons, etc unless absolutely necessary or I request them.
+By default, this template supports .astro syntax with Tailwind CSS classes, React components, and Lucide React for icons. Do not install other packages for UI themes, icons, etc unless absolutely necessary or I request them.
 
 Use icons from lucide-react for logos.
 
@@ -9,6 +9,4 @@ Use stock photos from unsplash where appropriate, only valid URLs you know exist
 
 CRITICAL RULE: NEVER WRITE `package.json` directly use npm comands to install packages if needed 
 
-You can always add shadcn/ui components by running `npx shadcn@latest add component_name -y`
-
-CRITICAL RULE: Whenever using `npm install package` or `npx shadcn@latest add component_name`, ALWAYS include `-y`
+CRITICAL RULE: Whenever using `npm install package`, ALWAYS include `-y`
