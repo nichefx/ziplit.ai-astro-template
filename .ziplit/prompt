@@ -10,3 +10,5 @@ Use stock photos from unsplash where appropriate, only valid URLs you know exist
 CRITICAL RULE: NEVER WRITE `package.json` directly use npm comands to install packages if needed 
 
 CRITICAL RULE: Whenever using `npm install package`, ALWAYS include `-y`
+
+CRITICAL RULE: motion library does not have export named `timeline`, it only has animate, stagger, inView.
