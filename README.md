@@ -6,7 +6,7 @@ This is a simple Astro template that includes a working Supabase integration for
 
 - **Astro** with React integration
 - **TypeScript** support
-- **TailwindCSS** for styling
+- **TailwindCSS v4** for styling
 - **Supabase** integration with:
   - Client-side authentication
   - Database operations (CRUD)

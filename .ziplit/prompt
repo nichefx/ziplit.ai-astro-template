@@ -6,6 +6,7 @@ Use icons from lucide-react for logos.
 
 Use stock photos from unsplash where appropriate, only valid URLs you know exist.
 
+CRITICAL RULE: We use Tailwind v4, so DO NOT ADD STYLES to tailwind.config.mjs, ALWAYS use the global.css file!
 
 CRITICAL RULE: NEVER WRITE `package.json` directly use npm comands to install packages if needed 
 
