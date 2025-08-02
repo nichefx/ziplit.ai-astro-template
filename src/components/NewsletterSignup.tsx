@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 import { supabase } from '../lib/supabase'
 
 export default function NewsletterSignup() {
@@ -44,7 +45,12 @@ export default function NewsletterSignup() {
   }
 
   return (
-    <div className="max-w-md mx-auto mt-8 p-6 bg-white rounded-lg shadow-md">
+    <motion.div 
+      className="max-w-md mx-auto mt-8 p-6 bg-white rounded-lg shadow-md"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
       <h3 className="text-xl font-bold mb-4 text-center">Join our Newsletter</h3>
       
       {message && (
@@ -96,6 +102,6 @@ export default function NewsletterSignup() {
           {loading ? 'Subscribing...' : 'Subscribe'}
         </button>
       </form>
-    </div>
+    </motion.div>
   )
 } 
