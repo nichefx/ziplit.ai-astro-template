@@ -1,5 +1,6 @@
 ---
 import { Sparkles } from '@lucide/astro';
+import NewsletterSignup from './NewsletterSignup.tsx';
 ---
 
 <div class="font-inter h-full flex flex-col md:block">
@@ -8,6 +9,7 @@ import { Sparkles } from '@lucide/astro';
 			<div data-hero class="flex flex-col items-center justify-center">
 				<h1 class="text-4xl font-bold flex gap-2">Welcome to Astro <Sparkles class="w-10 h-10" /></h1>
 				<p class="text-lg">This is a simple welcome page</p>
+				<NewsletterSignup client:load />
 			</div>
 		</section>
 	</main>
